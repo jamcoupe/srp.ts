@@ -2,7 +2,6 @@
   "name": "srp.ts",
   "description": "Secure Remote Password methods",
   "version": "0.0.1",
-
   "devDependencies": {
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.37",
@@ -12,12 +11,16 @@
     "karma-tsc-preprocessor": "0.0.5",
     "requirejs": "^2.1.18"
   },
-
   "main": "srp.js",
-
-  "dependencies": {
-    "bigint.ts": "jamcoupe/bigint.ts",
-    "encode.ts": "jamcoupe/encode.ts",
-    "hash.ts": "jamcoupe/hash.ts"
+  "jspm": {
+    "dependencies": {
+      "bigint.ts": "github:jamcoupe/bigint.ts@master",
+      "encode.ts": "github:jamcoupe/encode.ts@master",
+      "hash.ts": "github:jamcoupe/hash.ts@master"
+    },
+    "devDependencies": {
+      "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
+    }
   }
 }

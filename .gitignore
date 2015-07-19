@@ -1,4 +1,5 @@
 node_modules
+jspm_packages
 *.js
 *.js.map
 !karma.conf.js
