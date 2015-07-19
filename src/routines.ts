@@ -2,9 +2,6 @@ import {BigInt} from 'bigint.ts/bigint';
 import {UTF8, Hexadecimal, ByteArray} from 'encode.ts/encode';
 import {Hash, HashType} from 'hash.ts/hash';
 
-export {HashType} from 'hash.ts/hash';
-export {BigInt} from 'bigint.ts/bigint';
-
 
 
 export class Routines {

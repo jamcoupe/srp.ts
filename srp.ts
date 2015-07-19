@@ -1,1 +1,1 @@
-export {Routines, BigInt, HashType} from './src/routines';
+export {Routines} from './src/routines';
