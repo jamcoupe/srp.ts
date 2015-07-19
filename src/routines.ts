@@ -1,9 +1,9 @@
-import {BigInt} from './../node_modules/bigint.ts/bigint';
-import {UTF8, Hexadecimal, ByteArray} from './../node_modules/encode.ts/encode';
-import {Hash, HashType} from './../node_modules/hash.ts/hash';
+import {BigInt} from 'bigint.ts/bigint';
+import {UTF8, Hexadecimal, ByteArray} from 'encode.ts/encode';
+import {Hash, HashType} from 'hash.ts/hash';
 
-export {HashType} from './../node_modules/hash.ts/hash';
-export {BigInt} from './../node_modules/bigint.ts/bigint';
+export {HashType} from 'hash.ts/hash';
+export {BigInt} from 'bigint.ts/bigint';
 
 
 
