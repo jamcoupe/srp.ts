@@ -4,4 +4,6 @@ jspm_packages
 *.js.map
 !karma.conf.js
 !mainTest.js
+!config.js
+!gulpfile.js
 typings

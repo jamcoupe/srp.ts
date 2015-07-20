@@ -1,8 +1,8 @@
 /// <reference path="./../typings/tsd.d.ts" />
-import {Routines, HashType} from './../src/routines';
-import {BigInt} from './../node_modules/bigint.ts/bigint';
-import {Hexadecimal} from './../node_modules/encode.ts/encode';
-
+import {Routines} from './../src/routines';
+import {HashType} from 'hash.ts/hash';
+import {BigInt} from 'bigint.ts/bigint';
+import {Hexadecimal} from 'encode.ts/encode';
 
 
 const I = 'alice';

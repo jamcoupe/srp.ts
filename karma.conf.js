@@ -10,32 +10,38 @@ module.exports = function(config) {
 		// frameworks to use
 		// available frameworks: https://npmjs.org/browse/keyword/karma-adapter
 		frameworks: ['jasmine', 'requirejs'],
+  // list of files to exclude
 
-		files: [
+    exclude: [
+			'*.d.ts',
+	    	'**/*.d.ts',
+			'jspm_packages/**/test/*.js',
+			"**/bench/*.js",
+			"**/coverage/*.js",
+			"**/examples/*.js",
+			"**/benchmark/*.js"],
+
+	  files: [
 			{ pattern: 'test/mainTest.js', included: true, watched: true,  served: true },
 
-			{ pattern: 'src/**/*.ts', watched: true, included: false, served: false},
-			{ pattern: 'spr.ts', watched: true, included: false, served: false},
-			{ pattern: 'test/**/*.ts', watched: true, included: false, served: false},
+		  { pattern: 'jspm_packages/**/*.js', watched: false, included: false, served: true},
 
-			{ pattern: 'node_modules/encode.ts/encode.js', included: false },
-			{ pattern: 'node_modules/hash.ts/hash.js', included: false },
-			{ pattern: 'node_modules/bigint.ts/bigint.js', included: false },
-			{ pattern: 'node_modules/hash.ts/node_modules/rusha/rusha.js', included: false },
-			{ pattern: 'node_modules/encode.ts/node_modules/base64-js/base64.js', included: false },
-			{ pattern: 'node_modules/hash.ts/node_modules/encode.ts/encode.js', included: false },
-			{ pattern: '**/src/**/*.js', included: false },
 
-			{ pattern: 'srp.js', included: false },
-			{ pattern: 'src/**/*.js', included: false },
-			{ pattern: 'test/**/*.js', included: false }
-		],
+		  { pattern: 'encode.ts', watched: true, included: false, served: false},
+		  { pattern: 'src/**/*.ts', watched: true, included: false, served: false},
+		  { pattern: 'test/**/*.ts', watched: true, included: false, served: false},
 
-		// preprocess matching files before serving them to the browser
-		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-		preprocessors: {
-			'**/*.ts': ['tsc']
-		},
+		  { pattern: 'encode.js', included: false },
+		  { pattern: 'src/**/*.js', included: false },
+		  { pattern: 'test/**/*.js', included: false }
+	  ],
+
+	  // preprocess matching files before serving them to the browser
+	  // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+	  preprocessors: {
+		  '*/**/*.ts': ['tsc']
+	  },
+
 
 
 		tscPreprocessor: {
