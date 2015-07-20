@@ -1,5 +1,7 @@
 {
   "name": "srp.ts",
+  "repository": "",
+  "license": "MIT",
   "description": "Secure Remote Password methods",
   "version": "0.0.1",
   "devDependencies": {
